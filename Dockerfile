@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN apt install pipx
+RUN apt update && apt install -y pipx
 
 RUN pipx install PyYAML
 
